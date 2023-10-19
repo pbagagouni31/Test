@@ -1,0 +1,331 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "toc_visible": true,
+      "authorship_tag": "ABX9TyNCEcIH9/+r8r1PmLF+IWCQ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/pbagagouni31/Getting-Started-Python-2023/blob/main/Getting_Started_Python.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##Introduction to Python"
+      ],
+      "metadata": {
+        "id": "jyEd0WRb5fZc"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Statements in Python"
+      ],
+      "metadata": {
+        "id": "ZCC-gtuY6Lwe"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Hello world\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "81otZM2I6Pzm",
+        "outputId": "de1bcc9e-218e-44dd-b5a3-f50e2560ef91"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello world\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = \"bob\"\n",
+        "print(f\"hello {name} \")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7ONKA5bR7iIi",
+        "outputId": "53ecd478-92d9-4228-d845-8b906df957b4"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello bob \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Datastructures: Lists and Dictionaries"
+      ],
+      "metadata": {
+        "id": "TAhNJ4738ZRa"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### List\n"
+      ],
+      "metadata": {
+        "id": "EiVxKpp7_LFr"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruit = [\"apple\", \"pear\", \"Strawberry\"]"
+      ],
+      "metadata": {
+        "id": "csN1pwvl8kxE"
+      },
+      "execution_count": 9,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "type(fruit)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ec4i0ibg92SE",
+        "outputId": "1ea8e154-f4a2-4c0d-de45-e545c9e6e784"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "list"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruit[0]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "Z24IbuUk-C1M",
+        "outputId": "ffbb3219-b4b7-4a48-a9f6-b9dd34b69328"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'apple'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 11
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruit[:-1]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oBzzGU8X-H9T",
+        "outputId": "d065fd5f-13cc-4bca-bb62-089d2d526e96"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['apple', 'pear']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for my_fruit in fruit:\n",
+        "    print(f\"This is my favourite fruit: {my_fruit}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mxdc6VIq-exx",
+        "outputId": "76e167ea-9cce-45dd-c096-16950716ac93"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "This is my favourite fruit: apple\n",
+            "This is my favourite fruit: pear\n",
+            "This is my favourite fruit: Strawberry\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Dictionary"
+      ],
+      "metadata": {
+        "id": "L83ZJu2v_TEE"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "meal = {\"Breakfast\": \"black coffee\", \"Lunch\": \"salad\", \"Dinner\": \"Rice and Beans\"}"
+      ],
+      "metadata": {
+        "id": "BLwWnVpr_Vh3"
+      },
+      "execution_count": 17,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "meal.keys()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "J1DLO9CWAC8I",
+        "outputId": "b537cb69-b728-4852-86e6-aa223c52ff10"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "dict_keys(['Breakfast', 'Lunch', 'Dinner'])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 18
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "meal.values()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zIEBfE0xARoO",
+        "outputId": "3279791b-7030-4524-942a-effecce24d38"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "dict_values(['black coffee', 'salad', 'Rice and Beans'])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 19
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for meal_name, meal_item in meal.items():\n",
+        "    print(f\"This meal {meal_name} is when I like to consume {meal_item}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Jy-28mbKA0iV",
+        "outputId": "76223553-e63a-43f6-badd-7cdbfca1afdc"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "This meal Breakfast is when I like to consume black coffee\n",
+            "This meal Lunch is when I like to consume salad\n",
+            "This meal Dinner is when I like to consume Rice and Beans\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
